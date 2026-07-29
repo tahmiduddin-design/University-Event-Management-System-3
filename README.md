@@ -1,78 +1,87 @@
-# University Event Management System
-
-## Project Description
+University Event Management System
+Project Description
 
 The University Event Management System is a C programming project developed to manage university events efficiently.
 
-## Features
+Features
+Student Registration
+Student Login
+View Events
+Event Registration
+Payment Module
+Coordinator Panel
+Admin Panel
+Reports
+Project Structure
 
-- Student Registration
-- Student Login
-- View Events
-- Event Registration
-- Payment Module
-- Coordinator Panel
-- Admin Panel
-- Reports
+The project is modularized into separate header (.h) and source (.c) files, one set per team member's contribution, all linked together through main.c.
 
----
+University Event Management System/
+├── common.h        # Shared Student struct
+├── student.h        
+├── student.c        # Md Tahmid Uddin's module
+├── event.h
+├── event.c          # Marzia Fardous's module
+├── panel.h
+├── panel.c          # Omor Faruk Shariar's module
+├── main.c           # Main menu & program entry point
+├── student.txt
+├── registration.txt
+└── payment.txt
+Team Members & Contributions
 
-# Team Members & Contributions
+1. Md Tahmid Uddin
 
-## 1. MD Tahmid Uddin
-Id: 252-35-228
-### Contribution
-- Main Menu
-- Student Registration
-- Student Login
-- Login Algorithm
-- View Events
-- Dashboard
-- Student File Management
+ID: 252-35-228 Files: student.h, student.c, main.c
 
----
+Contribution
 
-## 2. Marzia Fardous
-Id: 252-35-198
-### Contribution
-- Event Registration
-- Payment Module
-- Running Student Discount
-- Alumni Discount
-- Department Discount
-- Club Event Free Payment
-- Central Event Free Payment
-- Coordinator Panel
-- Search Registration
+Main Menu
+Student Registration
+Student Login
+Login Algorithm (MD5 Hashing)
+Student File Management (Search / Update / Delete Student)
 
----
+2. Marzia Fardous
 
-## 3. Omor Faruk Shariar
-Id: 252-35-381
-### Contribution
-- Admin Panel
-- Search Student
-- Update Student
-- Delete Student
-- Search Payment
-- Reports
+ID: 252-35-198 Files: event.h, event.c
 
----
+Contribution
 
-## Programming Language
+View Events
+Event Registration
+Payment Module
+Running Student Discount
+Alumni Discount
+Department Discount
+Club Event Free Payment
+Central Event Free Payment
+Search Registration
+Search Payment
 
-- C
+3. Omor Faruk Shariar
 
-## IDE
+ID: 252-35-381 Files: panel.h, panel.c
 
-- Visual Studio Code
+Contribution
 
-## Compiler
+Coordinator Panel
+Admin Panel
+Dashboard
+Reports
+Programming Language
+C
+IDE
+Visual Studio Code
+Compiler
+GCC (MinGW)
+How to Compile & Run
+bash
 
-- GCC (MinGW)
+gcc main.c student.c event.c panel.c
+.\main.exe
 
-## Files
-
-- student.txt
-- registration.txt
-- payment.txt
+Data Files
+student.txt — stores registered student records
+registration.txt — stores event registration records
+payment.txt — stores payment records
